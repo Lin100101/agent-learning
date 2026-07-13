@@ -4,7 +4,7 @@ import requests
 url = "https://api.deepseek.com/chat/completions"
 
 header = {
-    "Authorization": "Bearer sk-363a8208f38d48aea2b27afc65082119",
+    "Authorization": "Bearer sk-xxxxxxxxxxx",  # Replace with your actual API key
     "content-type": "application/json"
 }
 
