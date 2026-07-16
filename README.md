@@ -1,65 +1,70 @@
-# Agent Learning
+# AI Agent 学习记录
 
-This repository records my journey of learning AI Agent development.
+这个仓库用于记录我学习 AI Agent 开发的过程。
 
-I am building my understanding of AI Agent systems from the fundamentals, including Python engineering, APIs, LLM applications, and agent architectures.
-
----
-
-## Goals
-
-* Learn Python engineering
-* Master Git and GitHub workflow
-* Understand HTTP and LLM APIs
-* Build AI Agent applications
-* Learn LangGraph
-* Learn OpenAI Agents SDK
-* Build RAG applications
-* Deploy AI Agents
+我会从 Python 工程基础、HTTP 与 API、LLM 应用开始，逐步学习 Agent 架构、工具调用、记忆、RAG 和多 Agent 系统，并通过持续实践建立完整的 Agent 开发能力。
 
 ---
 
-## Learning Progress
+## 学习目标
 
-### Week 01 - Foundations
-
-* ✅ Development environment setup
-* ✅ Python project structure with `uv`
-* ✅ Git workflow and version control basics
-* ✅ HTTP requests and JSON data processing
-* ✅ LLM API calling
-* ✅ Built a command-line AI chatbot with conversation context
-
----
-
-## Roadmap
-
-* [x] Python Review
-* [x] Git
-* [x] HTTP & APIs
-* [x] LLM Basics
-* [ ] Tool Calling
-* [ ] Agent Loop
-* [ ] LangGraph
-* [ ] RAG
-* [ ] MCP
-* [ ] Final Project
+- 掌握 Python 工程基础
+- 熟悉 Git 与 GitHub 工作流
+- 理解 HTTP、REST API 和 JSON
+- 理解 LLM API 与上下文管理
+- 独立构建 AI Agent 应用
+- 学习 LangGraph 与 OpenAI Agents SDK
+- 学习 RAG、MCP 和多 Agent 系统
+- 完成一个可部署的综合项目
 
 ---
 
-## Project Structure
+## 当前进度
+
+### 第 1 周：基础能力
+
+- ✅ 配置开发环境
+- ✅ 使用 `uv` 管理 Python 项目
+- ✅ 学习 Git 工作流与版本控制基础
+- ✅ 学习 HTTP 请求与 JSON 数据处理
+- ✅ 调用 DeepSeek API
+- ✅ 实现带对话上下文的命令行 Chatbot
+- ✅ 使用 `Agent` 类封装 LLM 调用
+- ✅ 理解并实现基于 `messages` 的短期记忆
+- 🔄 学习 Agent Loop 与 Tool Calling
+
+---
+
+## 学习路线概览
+
+- [x] Python 基础复习
+- [x] Git 基础
+- [x] HTTP 与 API 基础
+- [x] LLM API 基础
+- [x] 基础 Chat Agent 与短期记忆
+- [ ] Tool Calling
+- [ ] Agent Loop
+- [ ] LangGraph
+- [ ] RAG
+- [ ] MCP
+- [ ] 综合项目
+
+详细计划请查看 [ROADMAP.md](ROADMAP.md)。
+
+---
+
+## 项目结构
 
 ```text
 agent-learning/
-
 ├── week01/
 │   ├── day01/
 │   ├── day02/
 │   ├── day03/
-│   └── day04/
-│
+│   ├── day04/
+│   └── day05/
 ├── notes/
-├── docs/
+│   └── week01/
 ├── README.md
 ├── ROADMAP.md
 ├── pyproject.toml
@@ -68,27 +73,32 @@ agent-learning/
 
 ---
 
-## Projects
+## 已完成的实践
 
-### Week 01
+### 第 1 周
 
-* Command-line AI Chatbot
+#### 命令行 AI Chatbot
 
-  * Python
-  * requests
-  * DeepSeek API
-  * Conversation context management
+- 使用 Python 与 `requests`
+- 调用 DeepSeek API
+- 解析 API 返回的 JSON 数据
+- 保存并传递对话上下文
 
-More projects coming soon.
+#### 基础 Agent
+
+- 使用 `Agent` 类封装调用流程
+- 使用 `messages` 保存用户和助手消息
+- 实现连续对话与短期记忆
+- 增加基本的请求异常处理
 
 ---
 
-## Notes
+## 学习笔记
 
-Daily learning notes are stored in:
+每日学习笔记保存在：
 
 ```text
 notes/
 ```
 
-They record my understanding of concepts, debugging experience, and development reflections.
+笔记主要记录概念理解、代码实践、调试过程和学习反思，方便后续复习。
