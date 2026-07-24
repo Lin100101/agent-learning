@@ -1,6 +1,7 @@
 import inspect
 import json
-from typing import Callable, get_type_hints, Any
+from collections.abc import Callable
+from typing import Any, get_type_hints
 
 from pydantic import TypeAdapter
 
@@ -41,9 +42,10 @@ def function_to_schema(
     return schema
 
 if __name__ == "__main__":
+    from base_converter import base_converter
     from calculator import calculator
     from text_statistics import text_statistics
-    from base_converter import base_converter
+    
     for tool_function in [
         calculator,
         text_statistics,
